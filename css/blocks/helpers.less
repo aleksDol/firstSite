@@ -1,0 +1,77 @@
+//main:../style.less
+
+.container{
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    @media @tablet{
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+.text-center{
+    text-align: center;
+}
+.tittle{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 41.3px;
+    font-weight: 700;
+    @media @mobile-sm{
+        font-size: 30px;
+    }
+}
+
+.liner{
+    margin-left: auto;
+    margin-right: auto;
+    width: 87px;
+    height: 4px;
+}
+.btn-start{
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    border: 0;
+}
+.btn{
+    text-align: center;
+    background: none;
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
+    padding: 28px 80px;
+    max-width: 450px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    border-radius: 5px;
+    @media @mobile-sm{
+        padding: 14px 40px;
+        max-width: 450px;
+        font-size: 15px;
+        max-width: 250px;
+
+    }
+
+
+}
+.non{
+opacity: 0.2;
+cursor: not-allowed;
+& a:hover{
+    color: black;
+    text-decoration: none;
+    cursor: not-allowed;
+    }
+}
+#dopp{
+    display: none;
+}
+.grid-fold__card{
+    flex-direction: 25%;
+}
+

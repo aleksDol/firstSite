@@ -1,0 +1,125 @@
+//main:../style.less
+
+.portfolio{
+    background-color: @yellow;
+    padding-top: 120px;
+    padding-bottom: 136px;
+}
+
+.tittle--portfolio{
+    margin-bottom: 21px;
+}
+
+.tittle--liner{
+    margin-bottom: 23px;
+    background-color: #e5c37f;
+}
+
+.portfolio__text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #393939;
+
+}
+
+
+.portfolio__nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 42px;
+    @media @mobile{
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    
+}
+
+.portfolio__nav-button{
+    background-color: #ebcd8d;
+    padding: 12px 27px;
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #393939;
+    border-radius: 5px;
+    &:not(:last-child){
+        margin-right: 10px;
+        @media @mobile-sm{
+            margin-right: 0px;
+          
+        }
+    }
+    &:hover{
+        background-color: #fff;
+    }
+    @media @mobile-sm{
+        width: 40%;
+        margin-bottom: 30px;
+    }
+}
+
+
+.grid-folder{
+    margin-top: 62px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 70px;
+    padding-bottom: 83px;
+    @media @mobile-sm{
+        grid-template-columns: 1fr;
+        column-gap: 0;
+        row-gap: 50px;
+    }
+}
+
+.dop-grid-folder{
+    padding-top: 0;
+    margin-top: 0;
+    display: none;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+    justify-content: center;
+    row-gap: 70px;
+    padding-bottom: 83px;
+}
+.grid-folder__cards{
+    justify-self: center;
+
+}
+
+.grid-folder__image{
+    margin-bottom: 32px;
+    width: 100%;
+    height: auto;
+}
+
+.grid-folder__text{
+    font-size: 18px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #393939;
+    display: block;
+    &:hover{
+        color: #fff;
+    }
+}
+
+.portfolio__button{
+    background-color: #16c3a5;
+
+    border: 0;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:hover{
+        background-color: #fff;
+        color: @green;
+        box-shadow: 5px 5px 10px #fff ;
+    }
+}

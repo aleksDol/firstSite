@@ -1,0 +1,81 @@
+//main:../style.less
+
+.our-team{
+    padding-top: 110px;
+    background-color: @lite-blue;
+    padding-bottom: 127px;
+}
+.our-team__tittle{
+    margin-bottom: 22px;
+    color: #3c4761;
+}
+.our-team__liner{
+    margin-bottom: 25px;
+    background-color: #c9dae6;
+}
+
+.our-team__text{
+    text-align: center;
+
+    font-size: 18.6px;
+    font-weight: 400;
+    color: #3c4761;
+    padding-bottom: 70px;
+}
+
+.team-icon{
+    margin-bottom: 41px;
+    width: 100%;
+    height: auto;
+    @media @mobile{
+        max-width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
+}
+
+.grid-fold--wrap-team{
+    @media @mobile{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 70px;
+    }
+    @media @mobile-sm{
+        grid-template-columns: 1fr;
+        row-gap: 90px;
+    }
+    @media @tablet{
+        row-gap: 60px;
+        column-gap: 20px;
+    }
+}
+
+.our-team__name{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #27283d;
+    margin-bottom: 15px;
+}
+.our-team__post{
+    font-size: 16px;
+    font-weight: 400;
+    color: #30bae7;
+    margin-bottom: 26px;
+
+}
+.our-team__text-g{
+    font-size: 16px;
+    font-weight: 300;
+    color: #3c4761;
+    margin-bottom: 31px;
+}
+.our-team__icon{
+    margin-right: 9px;
+    
+}
+.our-team__icons{
+    display: flex;
+    justify-content: center;  
+}

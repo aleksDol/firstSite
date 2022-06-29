@@ -1,0 +1,79 @@
+//main:../style.less
+
+.srvises{
+    background-color: @green;
+    padding-bottom: 124px;
+}
+
+.servises__tittle{
+    padding-top: 119px;
+    color: #fff;
+    margin-bottom: 21px;
+
+}
+.servises__liner{
+    background-color: #13a88e;
+    margin-bottom: 23px;
+}
+
+.servises__text{
+    color: #fff;
+    padding-bottom: 70px;
+}
+
+
+
+.grid-fold{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 100px;
+    justify-content: center;
+    justify-items: center;
+ 
+    @media @mobile-sm{
+        grid-template-columns: 1fr;
+        row-gap: 90px;
+    }
+    @media @mobile{
+        grid-template-columns: 1fr 1fr;
+        row-gap: 70px;
+    }
+}
+.grid-fold__card{
+    @media @mobile-sm{
+        border-bottom: 3px solid white;
+        padding-bottom: 10px;
+    }
+ 
+
+}
+
+.grid-fold__images{
+    height: auto;
+    width: 100%;
+    margin-bottom: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    @media @mobile{
+        width: 70%;
+        height: auto;
+    }
+    @media @mobile-sm{
+        max-width: 100px;
+    }
+}
+
+.grid-fold__tittle{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 27px;
+}
+.grid-fold__text{
+    font-size: 16px;
+    font-weight: 300;
+    color: #ffffff;
+}

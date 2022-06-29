@@ -1,0 +1,51 @@
+//main:../style.less
+
+.header{
+    background-color: @purple;
+    padding-top: 50px;
+    @media @mobile{
+        border-bottom: 3px solid gray;
+        position: fixed;
+        left: 0;
+        right: 0;
+        z-index: 500000;
+    }
+}
+
+.header__logo{
+    @media @mobile{
+        padding-bottom: 20px;
+    }
+}
+
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+}
+.nav__links{
+    display: flex;
+    @media @mobile{
+        display: none;
+    }
+}
+.nav__link{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: beige;
+
+    border-radius: 5px;
+  
+    &:not(:last-child){
+        margin-right: 10px;
+    }
+
+    font-size: 16px;
+    font-weight: 400;
+
+    padding: 10px 17px;
+
+    &:hover{
+        background-color: #643a79;
+    }
+    
+}

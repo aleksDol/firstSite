@@ -1,0 +1,105 @@
+//main:../style.less
+
+
+.contact{
+    padding-top: 120px;
+    background-color: @blue;
+    padding-bottom: 115px;
+}
+.contact__inner{
+    flex-wrap: wrap;
+}
+.tittle--contact{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 21px;
+}
+
+.liner--contact{
+    background-color: #273a71;
+    margin-bottom: 23px;
+
+}
+
+.text__contact{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+.form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: minmax(55px, 56px) minmax(190px, 200px);
+    row-gap: 27px;
+    column-gap: 32px;
+    margin-top: 76px;
+    padding-bottom: 59px;
+     @media @mobile-sm{
+         grid-template-columns: 1fr;
+         grid-template-rows: minmax(45px, 46px) minmax(45px, 46px) minmax(80px, 130px);
+     }
+}
+
+.form__input-name{
+    border: 0;
+    border-radius: 10px;
+    background-color: #263a70;
+    padding-left: 20px;
+    &::placeholder{
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+.form__input-email{
+    border: 0;
+    border-radius: 10px;
+    background-color: #263a70;
+    padding-left: 20px;
+    &::placeholder{
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+.form__textarea{
+    resize: none;
+    border-radius: 10px;
+    grid-column: span 2;
+    background-color: #263a70;
+    padding-top: 20px;
+    padding-left: 20px;
+    @media @mobile-sm{
+        grid-column: span 1;
+    }
+    &::placeholder{
+        font-size: 18px;
+        font-weight: 400;
+        color: #ffffff;
+    }
+}
+.button-folder{
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__button{
+    background-color: #31bbe7;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 350px;
+    border: 0;
+
+    &:hover{
+        background-color: #fff;
+        color:#31bbe7;
+        box-shadow: 5px 5px 10px #fff;
+    }
+  
+}

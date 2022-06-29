@@ -1,0 +1,91 @@
+//main:../style.less
+
+
+.rewiews{
+    padding-top: 119px;
+    background-color: @pink;
+    padding-bottom: 120px;
+}
+
+.rewiews--tittle{
+    font-size: 40px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 21px;
+}
+
+.rewiews--liner{
+    background-color: #b93c6f;
+    margin-bottom: 23px;
+}
+
+.rewiews__text{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+
+
+
+.grid-rewiews{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 130px;
+    justify-content: center;
+    justify-items: center;
+    margin-top: 82px;
+    @media @mobile-sm{
+        grid-template-columns: 1fr;
+    }
+}
+.grid-rewiews__cards{
+    display: flex;
+    align-self: center;
+    @media @mobile{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+.grid-rewiews__content{
+    margin-left: 48px;
+    margin-right: 40px;
+}
+
+.grid-rewiews__massege{
+    margin-top: 11px;
+    font-size: 21px;
+    font-weight: 400;
+    font-style: italic;
+    color: #ffffff;
+    margin-bottom: 28px;
+    @media @mobile{
+        text-align: center;
+    }
+    @media @mobile-sm{
+        width: 100%;
+    }
+}
+
+.grid-rewiews__name{
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 9px;
+    @media @mobile{
+        text-align: center;
+    }
+}
+
+.grid-rewiews__post{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffdd99;
+    @media @mobile{
+        text-align: center;
+    }
+
+}

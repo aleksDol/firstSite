@@ -1,0 +1,52 @@
+//main:../style.less
+.intro{
+    padding-top: 145px;
+    background-color: @purple;
+    @media @mobile{
+    
+    }
+    @media @mobile-sm{
+        padding-top: 50px;
+    }
+}
+.intro__inner{
+    display: flex;
+    flex-wrap: wrap;
+
+    @media @mobile{
+        padding-top: 100px;
+    }
+
+}
+.intro__text{
+    width: 100%;
+    font-size: 42.2px;
+    font-weight: 700;
+    color: @beige;
+    margin-bottom: 45px;
+    @media @mobile-sm{
+        font-size: 30px;
+    }
+}
+.intro__button-folder{
+    margin-left: auto;
+    margin-right: auto;
+}
+.intro__button{
+    background-color: @orange;
+    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 145px;
+    border: 0;
+
+    
+    &:hover{
+        background-color: #fff;
+        color: @orange;
+        box-shadow: 5px 5px 10px #fff;
+    }
+    @media @mobile-sm{
+        margin-bottom: 45px;
+    }
+}

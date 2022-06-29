@@ -1,0 +1,25 @@
+//main:../style.less
+
+.footer{
+    background-color: #344b8f;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.footer__inner{
+    display: flex;
+    justify-content: space-between;
+    @media @mobile{
+        display: none;
+    }
+}
+
+
+.footer__social-link{
+    font-size: 24px;
+    font-weight: 600;
+    color: #ffffff;
+    &:hover{
+        color: #31b9e7;
+    }
+}
