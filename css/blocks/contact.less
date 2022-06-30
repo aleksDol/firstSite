@@ -53,6 +53,9 @@
         font-weight: 400;
         color: #ffffff;
     }
+    &:invalid{
+        border: 2px solid red;
+    }
 }
 .form__input-email{
     border: 0;
@@ -64,6 +67,9 @@
         font-weight: 400;
         color: #ffffff;
     }
+    &:invalid{
+        border: 2px solid red;
+    }
 }
 .form__textarea{
     resize: none;
@@ -72,6 +78,8 @@
     background-color: #263a70;
     padding-top: 20px;
     padding-left: 20px;
+    font-style: 15px;
+    color: #ffffff;
     @media @mobile-sm{
         grid-column: span 1;
     }
@@ -80,6 +88,16 @@
         font-weight: 400;
         color: #ffffff;
     }
+    &:invalid{
+        border: 2px solid red;
+    }
+}
+input{
+    color: #ffffff;
+    font-size: 16px;
+}
+textarea{
+    font-size: 16px;
 }
 .button-folder{
     max-width: 400px;
